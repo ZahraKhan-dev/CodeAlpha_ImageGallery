@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>My Image Gallery</h1>
+        <p>Explore beautiful moments</p>
+    </header>
+
+    <section class="filters">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('nature')">Nature</button>
+        <button onclick="filterImages('city')">City</button>
+        <button onclick="filterImages('travel')">Travel</button>
+    </section>
+
+    <main class="gallery">
+
+        <div class="gallery-item nature" onclick="openLightbox(0)">
+            <img src="Nature image.jpg" alt="Nature Image">
+            <h3>Beautiful Nature</h3>
+        </div>
+
+        <div class="gallery-item city" onclick="openLightbox(1)">
+            <img src="City image.jpg" alt="City Image">
+            <h3>Modern City</h3>
+        </div>
+
+        <div class="gallery-item travel" onclick="openLightbox(2)">
+            <img src="Travel image.jpg" alt="Travel Image">
+            <h3>Travel</h3>
+        </div>
+
+        <div class="gallery-item nature" onclick="openLightbox(3)">
+            <img src="Mountain image.jpg" alt="Nature Image">
+            <h3>Mountain View</h3>
+        </div>
+
+        <div class="gallery-item city" onclick="openLightbox(4)">
+            <img src="Lights image.jpg" alt="City Image">
+            <h3>City Lights</h3>
+        </div>
+
+        <div class="gallery-item travel" onclick="openLightbox(5)">
+            <img src="Advanture image.jpg" alt="Travel Image">
+            <h3>Adventure</h3>
+        </div>
+
+        <div class="gallery-item nature" onclick="openLightbox(6)">
+            <img src="Tree.jpg" alt="Tree Image">
+            <h3>Litle Tree</h3>
+        </div>
+
+        <div class="gallery-item nature" onclick="openLightbox(7)">
+            <img src="Lotus.jpg" alt="Lotus Image">
+            <h3>Lotus Flower</h3>
+        </div>
+
+        <div class="gallery-item nature" onclick="openLightbox(8)">
+            <img src="WaterFall.jpg" alt="WaterFall Image">
+            <h3>WaterFall</h3>
+        </div>
+
+        <div class="gallery-item nature" onclick="openLightbox(9)">
+            <img src="Rainbow.jpg" alt="Rainbow Image">
+            <h3>Rainbow</h3>
+        </div>
+
+        <div class="gallery-item city" onclick="openLightbox(10)">
+            <img src="Bridge.jpg" alt="city Image">
+            <h3>City Bridge</h3>
+        </div>
+
+        <div class="gallery-item city" onclick="openLightbox(11)">
+            <img src="Restaurants.jpg" alt="city Image">
+            <h3>City Restaurant</h3>
+        </div>
+
+        <div class="gallery-item city" onclick="openLightbox(12)">
+            <img src="Place.jpg" alt="city Image">
+            <h3>City Place</h3>
+        </div>
+
+        <div class="gallery-item city" onclick="openLightbox(13)">
+            <img src="Hotel.jpg" alt="city Image">
+            <h3>City Hotel</h3>
+        </div>
+
+        <div class="gallery-item travel" onclick="openLightbox(14)">
+            <img src="Boating.jpg" alt="Travel Image">
+            <h3>Boatingssss</h3>
+        </div>
+
+        <div class="gallery-item travel" onclick="openLightbox(15)">
+            <img src="Camping.jpg" alt="Travel Image">
+            <h3>Camping</h3>
+        </div>
+
+        <div class="gallery-item travel" onclick="openLightbox(16)">
+            <img src="Fishing.jpg" alt="Travel Image">
+            <h3>Fishing</h3>
+        </div>
+
+        <div class="gallery-item travel" onclick="openLightbox(17)">
+            <img src="Hicking.jpg" alt="Travel Image">
+            <h3>Hicking</h3>
+        </div>
+    </main>
+
+
+    <!-- Lightbox -->
+
+    <div class="lightbox" id="lightbox">
+
+        <button class="close" onclick="closeLightbox()">×</button>
+
+        <button class="prev" onclick="previousImage()">❮</button>
+
+        <img id="lightboxImage" src="" alt="Large Image">
+
+        <button class="next" onclick="nextImage()">❯</button>
+
+    </div>
+
+
+    <footer>
+        <p>© 2026 My Image Gallery | CodeAlpha Task 1</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
